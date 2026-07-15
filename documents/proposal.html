@@ -106,7 +106,7 @@
             <div class="flex gap-1">
                 <div id="dot-container" class="flex gap-2 mr-4 pointer-events-auto"></div>
             </div>
-            <p id="pageNumber" class="text-sm font-mono font-semibold text-emerald-500/70 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">01 / 13</p>
+            <p id="pageNumber" class="text-sm font-mono font-semibold text-emerald-500/70 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">01 / 15</p>
         </div>
     </div>
 
@@ -492,13 +492,13 @@
         <!-- ================= SLIDE 9: QUẢN LÝ TRỰC QUAN ================= -->
         <div class="slide flex-col justify-center px-16 md:px-32">
             <div class="slide-content max-w-6xl w-full mx-auto">
-                <div class="flex items-center gap-4 mb-12 justify-center text-center">
-                    <div class="w-16 h-16 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-3xl shadow-[0_0_15px_rgba(99,102,241,0.2)]">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl">
                         <i class="fa-solid fa-eye"></i>
                     </div>
                     <div>
-                        <h2 class="text-4xl font-extrabold text-white tracking-wide">Quản lý Trực quan (Visual Management)</h2>
-                        <p class="text-emerald-400 text-sm mt-2 font-medium uppercase tracking-widest">Nhận diện nhanh - Tiết kiệm chi phí đầu tư</p>
+                        <h2 class="text-3xl font-bold text-white tracking-wide">Quản lý Trực quan (Visual Management)</h2>
+                        <p class="text-slate-400 text-sm mt-1 font-medium">Nhận diện nhanh - Tiết kiệm chi phí đầu tư, giảm sai sót.</p>
                     </div>
                 </div>
 
@@ -736,7 +736,156 @@
             </div>
         </div>
 
-        <!-- ================= SLIDE 13: OUTRO ================= -->
+        <!-- ================= SLIDE 13 (MỚI): KẾ HOẠCH - CHUẨN BỊ ================= -->
+        <div class="slide flex-col justify-center px-16 md:px-32">
+            <div class="slide-content max-w-6xl w-full mx-auto">
+                <div class="flex justify-between items-end border-b border-slate-800 pb-6 mb-8">
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold text-white tracking-wide">Triển khai: Chuẩn bị Điều kiện & Sửa Quy trình</h2>
+                            <p class="text-slate-400 text-sm mt-1 font-medium">Trọng tâm: Chuẩn bị đầy đủ công cụ và quy trình (SOP) mới trước khi áp dụng.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                    <!-- Hạ tầng -->
+                    <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl relative">
+                        <div class="absolute -right-4 -top-4 w-12 h-12 bg-amber-500 text-slate-900 rounded-full flex items-center justify-center text-2xl shadow-lg shadow-amber-500/30"><i class="fa-solid fa-server"></i></div>
+                        <h3 class="text-xl font-bold text-white mb-6">Trang bị Công nghệ</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex gap-4 p-4 bg-slate-950 rounded-xl border border-slate-800">
+                                <div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-amber-400 shrink-0"><i class="fa-solid fa-laptop-code"></i></div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-200 mb-1">Phần mềm quản lý</h4>
+                                    <p class="text-xs text-slate-400">Cài đặt hệ thống MES và thiết lập luồng API đồng bộ trực tiếp với 3S ERP.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 p-4 bg-slate-950 rounded-xl border border-slate-800">
+                                <div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-amber-400 shrink-0"><i class="fa-solid fa-print"></i></div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-200 mb-1">Phần cứng chuyên dụng</h4>
+                                    <p class="text-xs text-slate-400">Chuẩn bị hạ tầng mạng LAN. Trang bị Tablet/Smartphone tại máy gia công. Mua sắm máy in tem và máy quét cho Kho.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SOP -->
+                    <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl relative">
+                        <div class="absolute -right-4 -top-4 w-12 h-12 bg-emerald-500 text-slate-900 rounded-full flex items-center justify-center text-2xl shadow-lg shadow-emerald-500/30"><i class="fa-solid fa-file-signature"></i></div>
+                        <h3 class="text-xl font-bold text-white mb-6">Chuẩn hóa Quy trình (SOP)</h3>
+                        
+                        <ul class="text-slate-300 space-y-5">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-arrow-right-arrow-left text-emerald-400 mt-1"></i>
+                                <div>
+                                    <strong class="block text-white mb-1">Viết lại luồng Xuất/Nhập</strong>
+                                    <span class="text-sm text-slate-400">Thiết kế lại toàn bộ quy trình di chuyển, vị trí hàng hóa theo hướng phù hợp 5S & luồng MES.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-tags text-emerald-400 mt-1"></i>
+                                <div>
+                                    <strong class="block text-white mb-1">Quy tắc sinh mã & Định danh</strong>
+                                    <span class="text-sm text-slate-400">Thống nhất chuẩn Mã định danh, Barcode/QR áp dụng đồng bộ cho BTP, VT - Sử dụng song song với hệ thống mã ERP</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-ban text-rose-400 mt-1"></i>
+                                <div>
+                                    <strong class="block text-white mb-1">Loại bỏ giấy tờ thừa</strong>
+                                    <span class="text-sm text-slate-400">Chuyển hoàn toàn các bước ký duyệt thủ công sang duyệt số (Digital Approval) trên phần mềm.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= SLIDE 14 (MỚI): KẾ HOẠCH - KHỞI TẠO ================= -->
+        <div class="slide flex-col justify-center px-16 md:px-32">
+            <div class="slide-content max-w-6xl w-full mx-auto">
+                <div class="flex justify-between items-end border-b border-slate-800 pb-6 mb-8">
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold text-white tracking-wide">Triển khai: Khởi tạo Dữ liệu & Áp dụng</h2>
+                            <p class="text-slate-400 text-sm mt-1 font-medium">Trọng tâm: Chuyển đổi dữ liệu từ vật lý lên hệ thống số và vận hành thực tế.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-8 items-center bg-slate-900/50 p-8 rounded-3xl border border-slate-800">
+                    <!-- Step A -->
+                    <div class="flex-1 space-y-4 w-full">
+                        <div class="bg-slate-900 border border-purple-500/30 p-6 rounded-2xl shadow-lg">
+                            <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                                <i class="fa-solid fa-cloud-arrow-up text-purple-400"></i> Khai báo Hệ thống
+                            </h3>
+                            <ul class="text-sm text-slate-300 space-y-2">
+                                <li>• Nhập danh mục HH (Mã, Tên, Cấu trúc Thùng).</li>
+                                <li>• Phân quyền tài khoản (Sản xuất, Kho, QC...).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Flow Icon -->
+                    <div class="text-3xl text-slate-600 hidden md:block animate-pulse">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                    <div class="text-3xl text-slate-600 md:hidden animate-pulse rotate-90">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+
+                    <!-- Step B -->
+                    <div class="flex-1 space-y-4 w-full">
+                        <div class="bg-slate-900 border border-purple-500/30 p-6 rounded-2xl shadow-lg">
+                            <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                                <i class="fa-solid fa-tags text-purple-400"></i> Thiết kế & In Thẻ
+                            </h3>
+                            <ul class="text-sm text-slate-300 space-y-2">
+                                <li>• Tiến hành in tem/thẻ thông tin hàng loạt.</li>
+                                <li>• Phân bổ và gắn thẻ cố định lên các Thùng/Lô hàng.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Flow Icon -->
+                    <div class="text-3xl text-slate-600 hidden md:block animate-pulse">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                    <div class="text-3xl text-slate-600 md:hidden animate-pulse rotate-90">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+
+                    <!-- Step C -->
+                    <div class="flex-1 space-y-4 w-full">
+                        <div class="bg-slate-900 border border-purple-500/30 p-6 rounded-2xl shadow-lg relative overflow-hidden">
+                            <div class="absolute inset-0 bg-purple-500/5 z-0"></div>
+                            <div class="relative z-10">
+                                <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                                    <i class="fa-solid fa-clipboard-check text-purple-400"></i> Kiểm kê Ban đầu
+                                </h3>
+                                <ul class="text-sm text-slate-300 space-y-2">
+                                    <li>• Chốt số lượng tồn kho vật lý tại hiện trường.</li>
+                                    <li>• Nhập số dư đầu kỳ vào MES khớp thực tế.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= SLIDE 15: OUTRO ================= -->
         <div class="slide flex-col justify-center items-center px-20">
             <div class="slide-content text-center max-w-4xl mx-auto border border-slate-800 bg-slate-900/80 p-12 rounded-3xl backdrop-blur-md relative overflow-hidden shadow-2xl">
                 <!-- Decorative effects -->
