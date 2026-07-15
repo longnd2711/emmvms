@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chiến Lược Số Hóa Hiện Trường & Tích Hợp MES - 3S ERP</title>
+    <title>Báo cáo đánh giá: Triển khai MES kết hợp 3S ERP</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
@@ -106,7 +106,7 @@
             <div class="flex gap-1">
                 <div id="dot-container" class="flex gap-2 mr-4 pointer-events-auto"></div>
             </div>
-            <p id="pageNumber" class="text-sm font-mono font-semibold text-emerald-500/70 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">01 / 12</p>
+            <p id="pageNumber" class="text-sm font-mono font-semibold text-emerald-500/70 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">01 / 13</p>
         </div>
     </div>
 
@@ -121,30 +121,40 @@
     <!-- Slide Container -->
     <div id="slides-container" class="relative w-full h-full z-10">
 
-        <!-- ================= MỚI - SLIDE 1 (Cũ: 1): BÌA ================= -->
+        <!-- ================= SLIDE 1: BÌA ================= -->
         <div class="slide active flex-col justify-center items-center px-20">
             <div class="slide-content text-center max-w-4xl mx-auto flex flex-col items-center">
                 <div class="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-slate-800 border border-slate-700 shadow-2xl shadow-emerald-500/10 mb-8">
                     <i class="fa-solid fa-microchip text-4xl text-emerald-400"></i>
                 </div>
                 <div class="inline-block px-4 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-emerald-400 text-xs font-bold uppercase tracking-widest mb-6 backdrop-blur-sm">
-                    Báo cáo đánh giá sơ bộ
+                    Báo cáo Đánh giá sơ bộ
                 </div>
                 <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight tracking-tight">
                     Số Hóa Hiện Trường & <span class="text-gradient">Tích Hợp MES - 3S ERP</span>
                 </h1>
+                
+                <!-- Khu vực thêm Tên người báo cáo -->
+                <div class="mt-2 mb-8 flex flex-col items-center gap-3">
+                    <p class="text-slate-500 text-xs font-bold uppercase tracking-widest">Người báo cáo</p>
+                    <div class="flex gap-4">
+                        <span class="bg-slate-900/80 border border-slate-700 px-5 py-2 rounded-full text-slate-300 font-semibold text-sm shadow-md"><i class="fa-regular fa-user mr-2 text-emerald-500"></i>Hoàng Xuân Vinh</span>
+                        <span class="bg-slate-900/80 border border-slate-700 px-5 py-2 rounded-full text-slate-300 font-semibold text-sm shadow-md"><i class="fa-regular fa-user mr-2 text-emerald-500"></i>Nguyễn Đình Long</span>
+                    </div>
+                </div>
+
                 <div class="w-24 h-1.5 bg-gradient-to-r from-emerald-500 to-sky-500 mx-auto rounded-full mb-8"></div>
                 <p class="text-lg md:text-xl text-slate-400 leading-relaxed font-light max-w-3xl">
                     Thay vì tư duy <strong class="text-emerald-400 font-semibold">"Đợi kho đếm mới biết tiến độ"</strong>, hệ thống vận hành mới sẽ chuyển sang <strong class="text-emerald-400 font-semibold">"Kiểm soát tiến độ sản xuất tức thì"</strong> kết hợp tinh gọn 5S và tích hợp thẳng vào hệ thống 3S ERP hiện hữu.
                 </p>
                 <button onclick="nextSlide()" class="mt-12 group flex items-center gap-3 px-6 py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-full transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)]">
-                    Xem Chi Tiết Đề Xuất
+                    Nội dung báo cáo
                     <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                 </button>
             </div>
         </div>
 
-        <!-- ================= MỚI - SLIDE 2 (Cũ: 2): HIỆN TRẠNG 3S ================= -->
+        <!-- ================= SLIDE 2: HIỆN TRẠNG 3S ================= -->
         <div class="slide flex-col justify-center px-16 md:px-32">
             <div class="slide-content max-w-6xl w-full mx-auto">
                 <div class="flex items-center gap-4 mb-10">
@@ -198,7 +208,48 @@
             </div>
         </div>
 
-        <!-- ================= MỚI - SLIDE 3 (Cũ: 3): BÀI TOÁN MÃ SỐ ================= -->
+        <!-- ================= SLIDE 3 (MỚI): HIỆN TRẠNG KHO ================= -->
+        <div class="slide flex-col justify-center px-16 md:px-32">
+            <div class="slide-content max-w-6xl w-full mx-auto">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="w-14 h-14 rounded-xl bg-orange-500/10 border border-orange-500/30 flex items-center justify-center text-orange-400 text-2xl">
+                        <i class="fa-solid fa-warehouse"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-white tracking-wide">Hiện trạng Kho lưu trữ vật lý</h2>
+                        <p class="text-slate-400 text-sm mt-1 font-medium">Khó khăn trong việc kiểm soát, theo dõi dấu vết và thao tác xuất nhập.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl border-l-4 border-l-orange-500 shadow-lg group hover:bg-slate-800/80 transition-colors">
+                        <div class="text-orange-400 text-2xl mb-3"><i class="fa-solid fa-cubes-stacked"></i></div>
+                        <h3 class="text-white font-bold mb-2 text-lg">1. Không quản lý được theo lô</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Không phân biệt được thời gian, nguồn gốc và quá trình sản xuất của từng đợt hàng, dẫn đến mất khả năng truy xuất nguồn gốc khi cần thiết.</p>
+                    </div>
+                    
+                    <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl border-l-4 border-l-orange-500 shadow-lg group hover:bg-slate-800/80 transition-colors">
+                        <div class="text-orange-400 text-2xl mb-3"><i class="fa-solid fa-shuffle"></i></div>
+                        <h3 class="text-white font-bold mb-2 text-lg">2. Hỗn loạn quy tắc Xuất/Nhập</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Lịch sử nhập/xuất chưa đủ chi tiết, dẫn đến tình trạng hàng vào trước nhưng ra sau, hoặc hàng vào sau lại ra trước, làm tồn đọng hàng cũ.</p>
+                    </div>
+                    
+                    <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl border-l-4 border-l-orange-500 shadow-lg group hover:bg-slate-800/80 transition-colors">
+                        <div class="text-orange-400 text-2xl mb-3"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                        <h3 class="text-white font-bold mb-2 text-lg">3. Dễ nhầm lẫn giữa các BTP</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Nhiều Bán thành phẩm (BTP) có ngoại hình, kích thước cực kỳ giống nhau. Việc không có định danh rõ ràng gây nhầm lẫn khi xuất chuyển khâu.</p>
+                    </div>
+                    
+                    <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl border-l-4 border-l-orange-500 shadow-lg group hover:bg-slate-800/80 transition-colors">
+                        <div class="text-orange-400 text-2xl mb-3"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                        <h3 class="text-white font-bold mb-2 text-lg">4. Tốn thời gian & Dễ sai sót</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Toàn bộ quá trình đếm số lượng, nhập kho được thực hiện thủ công bằng mắt thường. Tiêu tốn rất nhiều thời gian, nhân lực và tỷ lệ sai sót cao.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= SLIDE 4: BÀI TOÁN MÃ SỐ ================= -->
         <div class="slide flex-col justify-center px-16 md:px-32">
             <div class="slide-content max-w-6xl w-full mx-auto">
                 <div class="flex items-center gap-4 mb-10">
@@ -251,7 +302,7 @@
             </div>
         </div>
 
-        <!-- ================= MỚI - SLIDE 4 (Cũ: 5): BÀI TOÁN GẮN MÀ BTP ================= -->
+        <!-- ================= SLIDE 5: BÀI TOÁN GẮN MÃ BTP ================= -->
         <div class="slide flex-col justify-center px-16 md:px-32">
             <div class="slide-content max-w-6xl w-full mx-auto">
                 <div class="flex items-center gap-4 mb-10">
@@ -304,7 +355,7 @@
             </div>
         </div>
 
-        <!-- ================= MỚI - SLIDE 5 (Cũ: 11): KIẾN TRÚC HỆ THỐNG ================= -->
+        <!-- ================= SLIDE 6: KIẾN TRÚC HỆ THỐNG ================= -->
         <div class="slide flex-col justify-center px-16 md:px-32">
             <div class="slide-content max-w-6xl w-full mx-auto">
                 <div class="flex justify-between items-end border-b border-emerald-500/30 pb-6 mb-8">
@@ -313,7 +364,6 @@
                             <i class="fa-solid fa-network-wired"></i>
                         </div>
                         <div>
-                            <!-- Đã bỏ số 4 ở tiêu đề để flow logic hơn -->
                             <h2 class="text-4xl font-extrabold text-white tracking-wide">Giải pháp: MES & 3S ERP</h2>
                             <p class="text-emerald-400 text-base mt-1 font-medium">Cập nhật số liệu thực tế sản xuất, giảm tải cho kho.</p>
                         </div>
@@ -355,7 +405,7 @@
             </div>
         </div>
 
-        <!-- ================= MỚI - SLIDE 6 (Cũ: 4): NỀN TẢNG VẬT LÝ 5S ================= -->
+        <!-- ================= SLIDE 7: NỀN TẢNG VẬT LÝ 5S ================= -->
         <div class="slide flex-col justify-center px-16 md:px-32">
             <div class="slide-content max-w-6xl w-full mx-auto">
                 <div class="flex items-center gap-4 mb-10">
@@ -396,7 +446,7 @@
             </div>
         </div>
 
-        <!-- ================= MỚI - SLIDE 7 (Cũ: 6): QUY TẮC LƯU TRỮ ================= -->
+        <!-- ================= SLIDE 8: QUY TẮC LƯU TRỮ ================= -->
         <div class="slide flex-col justify-center px-16 md:px-32">
             <div class="slide-content max-w-6xl w-full mx-auto">
                 <div class="flex items-center gap-4 mb-10">
@@ -439,7 +489,7 @@
             </div>
         </div>
 
-        <!-- ================= MỚI - SLIDE 8 (Cũ: 7): QUẢN LÝ TRỰC QUAN ================= -->
+        <!-- ================= SLIDE 9: QUẢN LÝ TRỰC QUAN ================= -->
         <div class="slide flex-col justify-center px-16 md:px-32">
             <div class="slide-content max-w-6xl w-full mx-auto">
                 <div class="flex items-center gap-4 mb-12 justify-center text-center">
@@ -483,7 +533,7 @@
             </div>
         </div>
 
-        <!-- ================= MỚI - SLIDE 9 (Cũ: 8): ÁP DỤNG MES TẠI MÁY ================= -->
+        <!-- ================= SLIDE 10: ÁP DỤNG MES TẠI MÁY ================= -->
         <div class="slide flex-col justify-center px-16 md:px-32">
             <div class="slide-content max-w-6xl w-full mx-auto">
                 <div class="flex justify-between items-end border-b border-slate-800 pb-6 mb-8">
@@ -557,7 +607,7 @@
             </div>
         </div>
 
-        <!-- ================= MỚI - SLIDE 10 (Cũ: 9): CƠ CHẾ CHỐT LƯƠNG ================= -->
+        <!-- ================= SLIDE 11: CƠ CHẾ CHỐT LƯƠNG ================= -->
         <div class="slide flex-col justify-center px-16 md:px-32">
             <div class="slide-content max-w-6xl w-full mx-auto">
                 <div class="flex items-center gap-4 mb-10">
@@ -582,8 +632,9 @@
                         <div class="space-y-4">
                             <div class="bg-slate-950 p-4 rounded-xl border border-amber-500/50 flex gap-4 items-center shadow-[0_0_10px_rgba(245,158,11,0.1)] hover:border-amber-400/80 transition-colors">
                                 <div class="text-amber-400 shrink-0"><i class="fa-solid fa-display text-xl"></i></div>
-                                <h4 class="text-white text-sm leading-relaxed">
-                                    <span class="font-bold text-amber-400">Ví dụ hiển thị:<br></span> Tháng này anh/chị đã hoàn thành 160 BTP loại abcx, <br>Chờ QC xác nhận 100 BTP loại abcy.<strong>Tổng lương dự kiến 8.240.000đ</strong>
+                                <!-- Đoạn text được làm nổi bật font-bold -->
+                                <h4 class="text-white text-sm font-bold leading-relaxed">
+                                    <span class="text-amber-400">Ví dụ hiển thị:<br></span> Tháng này anh/chị đã hoàn thành 160 BTP loại abcx, <br>Chờ QC xác nhận 100 BTP loại abcy.<br><span class="text-emerald-400">Tổng lương dự kiến: 8.240.000đ</span>
                                 </h4>
                             </div>
                         </div>
@@ -624,7 +675,7 @@
             </div>
         </div>
 
-        <!-- ================= MỚI - SLIDE 11 (Cũ: 10): LUÂN CHUYỂN & QC ================= -->
+        <!-- ================= SLIDE 12: LUÂN CHUYỂN & QC ================= -->
         <div class="slide flex-col justify-center px-16 md:px-32">
             <div class="slide-content max-w-6xl w-full mx-auto">
                 <div class="flex justify-between items-end border-b border-slate-800 pb-6 mb-8">
@@ -685,24 +736,46 @@
             </div>
         </div>
 
-        <!-- ================= MỚI - SLIDE 12 (Cũ: 12): OUTRO ================= -->
+        <!-- ================= SLIDE 13: OUTRO ================= -->
         <div class="slide flex-col justify-center items-center px-20">
-            <div class="slide-content text-center max-w-3xl mx-auto border border-slate-800 bg-slate-900/80 p-12 rounded-3xl backdrop-blur-md relative overflow-hidden shadow-2xl">
+            <div class="slide-content text-center max-w-4xl mx-auto border border-slate-800 bg-slate-900/80 p-12 rounded-3xl backdrop-blur-md relative overflow-hidden shadow-2xl">
                 <!-- Decorative effects -->
                 <div class="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-emerald-500/20 to-transparent rotate-12 blur-3xl pointer-events-none"></div>
                 
-                <div class="inline-flex items-center justify-center w-24 h-24 rounded-full bg-slate-950 border-2 border-emerald-500 text-4xl text-emerald-400 mb-8 relative z-10 shadow-[0_0_30px_rgba(16,185,129,0.3)]">
+                <div class="inline-flex items-center justify-center w-24 h-24 rounded-full bg-slate-950 border-2 border-emerald-500 text-4xl text-emerald-400 mb-6 relative z-10 shadow-[0_0_30px_rgba(16,185,129,0.3)]">
                     <i class="fa-solid fa-check-double"></i>
                 </div>
                 
                 <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight relative z-10">Lợi ích Cốt lõi</h1>
                 
-                <div class="w-16 h-1 bg-emerald-500 mx-auto rounded-full mb-6 relative z-10"></div>
+                <div class="w-16 h-1 bg-emerald-500 mx-auto rounded-full mb-8 relative z-10"></div>
                 
-                <p class="text-lg text-slate-300 leading-relaxed relative z-10 font-light">
-                    Phương án này giải quyết vấn đề chậm chạp của thao tác nhập liệu, giảm tải cho kho, đồng bộ giữa các bộ phận.<br><br>
-                    Đưa thao tác về hiện trường, chốt số tức thời để tạo động lực nảy số cho người lao động, đồng thời vẫn bảo toàn vẹn dữ liệu Kế toán/Tài chính trên <strong class="text-emerald-400 font-semibold">3S ERP.</strong>
-                </p>
+                <!-- Thay thế đoạn văn cũ bằng 4 block lợi ích rõ ràng -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10 text-left w-full mx-auto">
+                    <div class="bg-slate-950/50 p-6 rounded-2xl border border-emerald-500/20 hover:border-emerald-500/50 transition-colors">
+                        <div class="text-emerald-400 text-2xl mb-3"><i class="fa-solid fa-bolt"></i></div>
+                        <h3 class="text-white text-lg font-bold mb-2">Dữ liệu Tức thời</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed">Cập nhật số liệu toàn hệ thống ngay khi quét mã.</p>
+                    </div>
+                    
+                    <div class="bg-slate-950/50 p-6 rounded-2xl border border-emerald-500/20 hover:border-emerald-500/50 transition-colors">
+                        <div class="text-emerald-400 text-2xl mb-3"><i class="fa-solid fa-gauge-high"></i></div>
+                        <h3 class="text-white text-lg font-bold mb-2">Tối ưu Hiệu suất</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed">Đo lường và đánh giá chính xác năng lực sản xuất để điều chỉnh cho phù hợp.</p>
+                    </div>
+                    
+                    <div class="bg-slate-950/50 p-6 rounded-2xl border border-emerald-500/20 hover:border-emerald-500/50 transition-colors">
+                        <div class="text-emerald-400 text-2xl mb-3"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3 class="text-white text-lg font-bold mb-2">Quản lý Chất lượng</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed">Thu hẹp phạm vi lỗi phát sinh và cảnh báo, giảm thiểu hàng hỏng.</p>
+                    </div>
+                    
+                    <div class="bg-slate-950/50 p-6 rounded-2xl border border-emerald-500/20 hover:border-emerald-500/50 transition-colors">
+                        <div class="text-emerald-400 text-2xl mb-3"><i class="fa-solid fa-rotate"></i></div>
+                        <h3 class="text-white text-lg font-bold mb-2">Đồng bộ Hệ thống</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed">Đồng bộ giữa các bộ phận, đưa thao tác về hiện trường, giảm tải cho Kho, thống kê.</p>
+                    </div>
+                </div>
                 
                 <div class="mt-10 pt-8 border-t border-slate-800 relative z-10 flex justify-center gap-4">
                     <button onclick="scrollToSlide(0)" class="text-sm px-6 py-2.5 rounded-full border border-slate-700 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
